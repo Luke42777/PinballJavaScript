@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pinball game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jednoręki bandyta</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="wrap">
+      <h1>Pinball game</h1>
 
-<body>
-  <div class="wrap">
+      <section class="game">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
 
-    <h1>Jednoręki bandyta</h1>
+      <section class="play">
+        <input type="number" placeholder="Place bid" id="bid" />
+        <button id="start">Spin!</button>
+      </section>
 
-    <section class="game">
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="color"></div>
-    </section>
+      <section class="panel">
+        Your current money: <span class="wallet"></span>
+      </section>
 
-    <section class="play">
-      <input type="number" placeholder="Podaj stawkę" id="bid">
-      <button id="start">Zakręć!</button>
-    </section>
-
-    <section class="panel">TWOJE SRODKI PRZED KOLEJNĄ GRĄ TO: <span class="wallet"></span></section>
-
-    <section class="score">
-      <span class="result"></span> Za tobą <span class="number"></span> gier, w tym <span class="win"></span> wygranych
-      i <span class="loss"></span> przegranych
-    </section>
-
-  </div>
-  <script src="Wallet.js"></script>
-  <!-- <script src="Game.js"></script>
+      <section class="score">
+        <span class="result"></span> Played games <span class="number"></span>,
+        including <span class="win"></span> wins and
+        <span class="loss"></span> losses
+      </section>
+    </div>
+    <script src="Statistics.js"></script>
+    <!-- <script src="Wallet.js"></script>
+  <script src="Game.js"></script>
   <script src="main.js"></script> -->
-</body>
-
+  </body>
 </html>
